@@ -66,9 +66,7 @@ main{
   //border:1px solid yellow;
   grid-area: main;
   padding: 60px 40px 60px;
-  @include bp-medium {
-    overflow: auto;
-  }
+  overflow: auto;
 }
 
 header {
@@ -94,32 +92,15 @@ section {
 }
 
 
-.sticky-title{
+.sticky-title {
   position: relative;
   z-index: 1;
   border-bottom:none;
-}
-
-.sticky-title.fixed {
-  transition: all 0.2s;
-  position: fixed;
-  top: 5px;
-  left:0px;  
-  width: 100%;
-  padding: 20px;
-  @include bp-medium {
-    width: calc(100% - 380px);
-    left: unset;
-    padding: 20px 0px 20px;
-  }
-  box-sizing: border-box;
-  z-index: 1;
+  position: sticky;
+  top: -60px;    
   background: white;
   border-bottom: 5px solid $sc-grey;
-}
-
-.sticky-title.fixed.absolute {
-  position: absolute;
+  padding-top:20px;
 }
 
 .article-grid {

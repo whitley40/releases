@@ -1,4 +1,4 @@
-ompiled source #
+# compiled source #
 ###################
 *.com
 *.class
@@ -36,7 +36,11 @@ ompiled source #
 ehthumbs.db
 Thumbs.db
 
-# exlude node modules #
+# exclude node modules #
 ######################
 node_modules/
+
+# exclude dist #
+################
+dist/
 
