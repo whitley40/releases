@@ -7,11 +7,6 @@ const cleancss = require('gulp-clean-css');
 const rename = require('gulp-rename');
 const browsersync = require('browser-sync').create();
 const clean = require('gulp-clean');
-//const ts = require('gulp-typescript');
-//const uglify = require('gulp-uglify');
-//const concat = require('gulp-concat');
-//const maps = require('gulp-sourcemaps');
-//const mamp = require('gulp-mamp');
 
 /* compiling the sass and autoprefix */
 
