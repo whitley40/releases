@@ -5,8 +5,7 @@ var stickyHeaders = (function() {
     var $window = $(window),
         $stickies;
   
-    var load = function(stickies) {
-      console.log("BOOM!");
+    var load = function(stickies) {      
       if (typeof stickies === "object" && stickies instanceof jQuery && stickies.length > 0) {
   
         $stickies = stickies.each(function() {
@@ -64,6 +63,6 @@ var stickyHeaders = (function() {
     };
   })();
   
-  $(function() {
+  /*$(function() {
     stickyHeaders.load($(".sticky-title"));
-  });
+  });*/

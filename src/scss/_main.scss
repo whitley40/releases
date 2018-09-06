@@ -66,9 +66,7 @@ main{
   //border:1px solid yellow;
   grid-area: main;
   padding: 60px 40px 60px;
-  @include bp-medium {
-    overflow: auto;
-  }
+  overflow: auto;
 }
 
 header {
@@ -94,10 +92,15 @@ section {
 }
 
 
-.sticky-title{
+.sticky-title {
   position: relative;
   z-index: 1;
   border-bottom:none;
+  position: sticky;
+  top: -60px;    
+  background: white;
+  border-bottom: 5px solid $sc-grey;
+  padding-top:20px;
 }
 
 .sticky-title.fixed {
