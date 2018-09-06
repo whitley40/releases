@@ -1,4 +1,4 @@
-/* start styling it up! */
+/* brand styles */
 
 html, body {
   height: 100%;
@@ -43,8 +43,9 @@ a{
   }
 }
 
+/* setting the base container grid */
+
 .container {
-  //background: blue;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
@@ -62,8 +63,9 @@ a{
   } 
 }
 
+/* main content area */
+
 main{
-  //border:1px solid yellow;
   grid-area: main;
   padding: 60px 40px 60px;
   overflow: auto;
@@ -74,7 +76,6 @@ header {
   margin-bottom: 50px;
   p{
     font-size: 0.9rem;
-    //font-style: italic;
     line-height: 22px;
     margin-bottom: 10px;
   }
@@ -91,6 +92,7 @@ section {
   }
 }
 
+/* month titles to stick to the top of the page */
 
 .sticky-title {
   position: relative;
@@ -103,6 +105,9 @@ section {
   padding-top:20px;
 }
 
+
+/* releases grid */
+
 .article-grid {
   display: grid;
   grid-gap: 40px;
@@ -111,6 +116,9 @@ section {
     grid-gap: 60px;
   }
 }
+
+
+/* each of the releases */
 
 article {
   a{
@@ -160,8 +168,10 @@ article {
   }
 }
 
+
+/* right side bar with svg background that sets to the top of the page on mobile */
+
 aside{
-  //border:1px solid red;
   display: flex;
   grid-area: aside;
   justify-content: center;
@@ -176,11 +186,13 @@ background-size: cover;
   }
   img {
     display: block;
-    //background: yellow;
     width: 160px;
     margin: 20px;
   }
 }
+
+
+/* gradient brand bar */
 
 .brandbar {
     display: flex;
